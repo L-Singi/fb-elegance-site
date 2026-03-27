@@ -306,7 +306,7 @@
         .copyright a { color: #aaa; text-decoration: none; transition: color 0.2s; }
         .copyright a:hover { color: #b88b4a; }
         
-        /* ===== NOVO: BANNER MOBILE ===== */
+        /* ===== BANNER MOBILE COMO BARRA INICIAL ===== */
         .mobile-hero {
             display: none;
             width: 100%;
@@ -316,17 +316,17 @@
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         @media (max-width: 768px) {
             .mobile-hero {
                 display: block;
-                padding: 0 20px;
-                margin-bottom: 20px;
+            }
+            /* Remove o espaçamento extra do container no topo quando a imagem estiver presente */
+            .container {
+                padding-top: 0;
             }
         }
-        /* ===== FIM NOVO ===== */
+        /* ===== FIM ===== */
         
         @media (max-width: 768px) {
             .container { padding: 0 20px; }
@@ -340,6 +340,11 @@
     </style>
 </head>
 <body>
+
+<!-- BANNER MOBILE (barra inicial) -->
+<div class="mobile-hero">
+    <img src="https://i.postimg.cc/qRLRqFxS/imagem-convertida.png" alt="FB Elegance Lux">
+</div>
 
 <header class="header">
     <div class="container header-inner">
@@ -365,11 +370,6 @@
 </header>
 
 <main>
-    <!-- BANNER MOBILE (aparece apenas em celular) -->
-    <div class="mobile-hero">
-        <img src="https://i.postimg.cc/qRLRqFxS/imagem-convertida.png" alt="FB Elegance Lux">
-    </div>
-
     <div class="container">
         <div class="filters-section">
             <div class="filter-group">
